@@ -17,7 +17,7 @@ class NumberDisplayAdapter (private val numbers: Array<Int>, private val callbac
         val textView = layout.findViewById<TextView>(R.id.textView)
 
         init {
-            textView.setOnClickListener { callback(adapterPosition) }
+            textView.setOnClickListener { callback(numbers[bindingAdapterPosition]) }
         }
 
     }
